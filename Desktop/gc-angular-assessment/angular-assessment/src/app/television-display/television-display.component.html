@@ -1,0 +1,6 @@
+<div *ngFor="let x of televisions" class="border">
+    <p>Name: {{x.name}}</p>
+    <p>Size: {{x.size}}</p>
+    <p [ngClass]="x.smart === true ? 'smart' : 'notsmart' ">Smart: {{x.smart}}</p>
+    <button (click)="removeTv(x)">x</button>
+</div>
